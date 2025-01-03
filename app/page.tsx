@@ -55,27 +55,27 @@ export default function Home() {
     <main className="flex-1 overflow-scroll p-2 lg:p-5 bg-gradient-to-tr from-teal-400 to-white">
       <div className="bg-white py-24 sm:py-32 rounded-md drop-shadow-xl">
         <div className="flex flex-col justify-center items-center mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="text-base font-semibold leading-7 text-teal-500">
-              Chat To Your Personal Interactive Document Companion
-            </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Transform Your PDFs into Immersive Conversations
+          <div className="flex flex-col items-center text-center">
+            <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Chat with your <span className="text-teal-500">documents</span> in
+              seconds
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Introducing{" "}
               <span className="font-bold text-teal-500">ChatPDF.</span>
               <br />
-              <br /> Upload your document and let 
-              <span className="text-teal-500"> ChatPDF</span>{" "} transform it into a{" "}
-              <span className="font-bold">dynamic conversation</span>. From answering questions to
-              summarizing content, it's the perfect tool to boost productivity effortlessly—making static
-              PDFs interactive and engaging. Ideal for everyone!
+              <br />
+              Upload your document and let<span className="text-teal-500"> ChatPDF</span> transform it into
+              a <span className="font-bold">dynamic conversation</span>. Fromanswering questions to summarizing content, ChatPDF is the perfect
+              tool to boost productivity effortlessly—making static PDFs interactive and engaging. Ideal for everyone!
             </p>
-          </div>  
-          
-          <Button asChild className="mt-10">
-            <Link href='/dashboard'> START NOW!</Link>
+          </div>
+
+          <Button
+            asChild
+            className="mt-10 bg-teal-500 text-white hover:bg-teal-600"
+          >
+            <Link href="/dashboard"> Get Started</Link>
           </Button>
         </div>
 
@@ -83,14 +83,13 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <Image
               alt="UI Screenshot"
-              src="https://i.imgur.com/VciRSTI.jpeg"
+              src="/image.jpg"
               width={2432}
               height={1442}
               className="mb-[-0%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
             />
             <div aria-hidden="true" className="relative">
-              <div className="absolute bottom-0 -inset-x-32 bg-gradient-to-t from-white/95 pt-[5%]"> 
-              </div>
+              <div className="absolute bottom-0 -inset-x-32 bg-gradient-to-t from-white/95 pt-[5%]"></div>
             </div>
           </div>
         </div>
